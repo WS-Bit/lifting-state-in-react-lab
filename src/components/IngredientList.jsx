@@ -7,7 +7,7 @@ const IngredientList = ({ ingredients, addToBurger }) => {
       {ingredients.map((ingredient) => (
         <li key={ingredient.name} style={{ color: ingredient.color }}>
           {ingredient.name}
-          <button onClick={() => addToBurger(ingredient)}>Add ingredient</button>
+          <button onClick={() => addToBurger(ingredient)}>+</button>
         </li>
       ))}
     </ul>

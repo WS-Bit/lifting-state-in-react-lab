@@ -38,13 +38,12 @@ const App = () => {
     <main>
       <h1>Burger Stacker</h1>
       <section>
-        <ul>
+        <li>
           <IngredientList ingredients={availableIngredients} addToBurger={addToBurger} /> 
-        </ul>
-      <h1>Burger</h1>
-      <ul>
+        </li>
+        <li>
           <BurgerStack stack={stack} removeFromBurger={removeFromBurger} />
-      </ul>
+        </li>
       </section>    
     </main>
   );
